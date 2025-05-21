@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosmic-pinn"
+version = "0.1.0"
+description = "Physics-Informed Neural Network simulation of cosmic large-scale structure."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["PINN", "cosmology", "deep learning", "physics-informed"]
+authors = [
+  {name = "Arnav Menon"}
+]
+dependencies = [
+  "torch>=2.0",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "PyYAML>=6.0",
+  "tqdm>=4.66"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"] 
